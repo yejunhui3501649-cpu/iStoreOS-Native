@@ -128,6 +128,13 @@ define U-Boot/tvi3315a-rk3399
     tvi_tvi3315a
 endef
 
+define U-Boot/emb-3531-rk3399
+  $(U-Boot/rk3399/Default)
+  NAME:=EMB-3531
+  BUILD_DEVICES:= \
+    norco_emb-3531
+endef
+
 define U-Boot/nanopc-t4-rk3399
   $(U-Boot/rk3399/Default)
   NAME:=NanoPC T4
@@ -358,6 +365,7 @@ endef
 
 UBOOT_TARGETS := \
   nanopc-t4-rk3399 \
+  emb-3531-rk3399 \
   nanopi-r4s-rk3399 \
   nanopi-r4se-rk3399 \
   rock-pi-4-rk3399 \
